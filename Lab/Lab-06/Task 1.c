@@ -1,24 +1,24 @@
 #include <stdio.h>
-int main()
-{
-	int i,j,rows=5,space;
-	for(i=1;i<=5;i++){
-		for(space = 1;space<=rows-i;space++){
-			printf(" ");
-		}
-		for(j =1;j<=2*i-1;j++){
-			printf("*");
-		}
-		printf("\n");
+#include <string.h>
+
+int main(){
+	char user[5],password[6],loginUser[6],loginPassword[6];
+	printf("USER REGISTRATION SYSTEM\n");
+	printf("Enter a user name of 5 alphabets:");
+	scanf("%s",&user);
+	printf("Enter Password and Password should be 6 Characters long with at-least 1 numeric, 1 captial and 1 small letter: ");
+	scanf("%s",&password);
+	printf("\nAccount Created SuccessFully!\n\n");
+	printf("Login the Account\n");
+	while(strcmp(user, loginUser) !=0 ){
+		printf("Enter Username:");
+		scanf("%s",&loginUser);
+	}
+	while(strcmp(password, loginPassword) !=0 ){
+		printf("Enter Password:");
+		scanf("%s",&loginPassword);
 	}
 	
-		for(i=5;i>=1;i--){
-		for(space = 1;space<=rows-i;space++){
-			printf(" ");
-		}
-		for(j =1;j<=2*i-1;j++){
-			printf("*");
-		}
-		printf("\n");
-	}
+	printf("Welcome %s, You are now Logged in",user);
+
 }
