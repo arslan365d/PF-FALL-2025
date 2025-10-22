@@ -11,7 +11,7 @@ int main()
 	strcat(fullName,firstName);
 	strcat(fullName," ");
 	strcat(fullName,lastName);
-	countOfCharac = strlen(fullName) - 1;
+	countOfCharac = strlen(fullName);
 	printf("Your Full Name is %s",fullName);
 	
 	return 0;
