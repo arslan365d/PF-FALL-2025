@@ -1,0 +1,10 @@
+Q)Write pseudo-code for adding two numbers.
+
+Pseudo-Code:
+BEGIN
+VARIABLES  X, Y, Sum
+INPUT X
+INPUT Y
+Sum=X+Y
+OUTPUT Sum
+END
