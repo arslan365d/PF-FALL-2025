@@ -1,9 +1,0 @@
-Q Write a Pseudo-code for  Calculating the area of a rectangle.
-
-Pseudo-Code:
-BEGIN
-VARIABLES height,width and area
-INPUT height and width
-area = height*width
-OUTPUT area
-END

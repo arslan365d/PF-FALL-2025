@@ -1,26 +1,24 @@
 #include <stdio.h>
 int main()
 {
-	int givenChar;
-	printf("Character Classification!!!\n");
-	
-    // Taking a Character as input
-   printf("Enter a Character:");
-   scanf("%c",&givenChar);
-   
-   // Converting the given character to integer type  
-   givenChar = (int) givenChar;
-   
-  // Checking the given Character
-   if(givenChar>=97 && givenChar<=122){
-   	printf("The given character is classified as 'lowercase'");
-   }else if(givenChar>=65 && givenChar<=90){
-   	printf("The given character is classified as 'UPPERCASE'");
-   }else if(givenChar>=48 && givenChar<=57){
-   	printf("The given character is classified as 'Digit'");
-   }else if((givenChar>=33 && givenChar<=47)||(givenChar>=58 && givenChar<=64)||(givenChar>=91 && givenChar<=96)||(givenChar>=123 && givenChar<=126)){
-   	printf("The given character is classified as 'Special Character'");
-   }else{
-   	 printf("Invalid Character!!!");
-   }
-}   
+  int age,hasId;
+  printf("Voting Checker!!!\n");
+  
+  printf("Enter your age:");
+  scanf("%d",&age);
+
+  if(age>=18){
+  	  printf("Do you have an ID card? If yes, type (1). If no, type (0):");
+      scanf("%d",&hasId);
+      
+     if(hasId==1){
+      printf("You are eligible for voting");
+     }else if(hasId==0){
+      printf("You meet the age requirement but not have ID Card.");
+     }else{
+      printf("Invalid Input!!");
+     }    
+  }else{
+    printf("You are not eligible for voting.");
+  }
+}
