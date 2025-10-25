@@ -12,6 +12,6 @@ else if(percentage>=70)
 printf("Your grade is 'C'");
 else if(percentage>=60)
 printf("Your grade is 'D'");
-else {
+else 
 printf("You are FAIL!!!");
 }
