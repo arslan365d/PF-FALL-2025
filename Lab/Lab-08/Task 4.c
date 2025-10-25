@@ -10,5 +10,5 @@ int main() {
   printf("a is smaller than b");
  else
   printf("a is greater than b");
- return 0;
+returnÂ 0;
 }
