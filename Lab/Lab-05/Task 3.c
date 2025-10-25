@@ -19,7 +19,7 @@ int main(void)
         printf("\nYour department is BCIT.\n");
 
         printf("Select your specialization:\n");
-        printf("1. CSIT\n");
+        printf("1. CSCY\n");
         printf("2. CSDS\n");
         printf("3. CSGA\n");
         printf("4. CSAI\n");
@@ -29,7 +29,7 @@ int main(void)
         switch (spe)
         {
         case 1:
-            printf("Your specialization is CSIT.\n");
+            printf("Your specialization is CSCY.\n");
             break;
         case 2:
             printf("Your specialization is CSDS.\n");
