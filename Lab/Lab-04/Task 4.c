@@ -1,3 +1,5 @@
+#include <stdio.h>
+int main()
 {
     char isFever, isFlu, isCough;
     
