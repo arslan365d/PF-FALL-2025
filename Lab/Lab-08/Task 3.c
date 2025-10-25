@@ -3,7 +3,6 @@
 int main()
 {
 	char firstName[20] , lastName[20],fullName[40];
-	int countOfCharac = 0,i;
 	printf("Enter your First Name:");
 	scanf("%s",&firstName);
 	printf("Enter your Last Name:");
