@@ -1,3 +1,5 @@
+#include <stdio.h>
+int main(){
 int sum=0,n;
 int marks[6];
 float avg = 0;

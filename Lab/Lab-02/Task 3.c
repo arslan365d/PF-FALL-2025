@@ -11,7 +11,7 @@ int main(void)
     scanf("%d", &num2);
     
     if(num1<num2){
-    	printf("Minimum number is: %d\n", num1)
+    	printf("Minimum number is: %d\n", num1);
 	}else{
 		printf("Minimum number is: %d\n", num2);
 	}
