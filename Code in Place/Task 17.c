@@ -1,28 +1,18 @@
 #include <stdio.h>
-int main(){
-	int r,c;
-	printf("SUM OF DIAGONAL ELEMENTS!!!\n");
-	printf("Enter the Rows of Matrix: ");
-	scanf("%d",&r);
-	printf("Enter the Columns of Matrix: ");
-	scanf("%d",&c);
-	int arr[r][c];
-	printf("Enter the Elements of Matrix\n");
-	int sum=0;
-	for(int i=0;i<r;i++){
-		for(int j=0;j<c;j++){
-			scanf("%d",&arr[i][j]);
-		}
-	}
-	for(int i=0;i<r;i++){
-		for(int j=0;j<c;j++){
-		    if(i==j || (i+j) %2 ==0){
-		       sum += arr[i][j]; 
-		    }
-		}
-	}
-	
-	printf("The sum of Diagonal Element is %d",sum);
-	
-	
+
+int main()
+{
+    int n, sum = 0;
+    printf("SUM OF DIAGONAL ELEMENTS!!!\n");
+    printf("Enter the dimension of a square array: ");
+    scanf("%d", &n);
+    int arr[n][n];
+    printf("Input elements in the array.\n");
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++)
+            scanf(" %d", &arr[i][j]);
+    for (int i = 0; i < n; i++)
+        sum += arr[i][i];
+    printf("The sum of diagonal elements of the square array is %d.", sum);
+    return 0;
 }
