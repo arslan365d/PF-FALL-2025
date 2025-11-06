@@ -8,6 +8,5 @@ int main() {
     gets(name);
     for(int i=strlen(name)-1;i>=0;i--){
       printf("%c",name[i]);
-    }
-    
+        }
 }
